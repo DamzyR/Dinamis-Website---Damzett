@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Website Dinamis | Adam Ramdani F</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+   <header class="header">
+
+      <section class="flex">
+
+         <a href="#home" class="logo">Game Store</a>
+
+         <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Game</a>
+         </nav>
+
+         <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="user-btn" class="fas fa-user"></div>
+            <div id="order-btn" class="fas fa-box"></div>
+            <div id="cart-btn" class="fas fa-shopping-cart"><span>(4)</span></div>
+         </div>
+
+      </section>
+
+   </header>
+
+   <!-- header section ends -->
+
+   <div class="user-account">
+
+      <section>
+
+         <div id="close-account"><span>close</span></div>
+
+         <div class="user">
+            <p><span>you are not logged in now!</span></p>
+         </div>
+
+         <div class="flex">
+
+            <form action="" method="post">
+               <h3>login now</h3>
+               <input type="email" name="email" required class="box" placeholder="enter your email" maxlength="50">
+               <input type="password" name="pass" required class="box" placeholder="enter your password" maxlength="20">
+               <input type="submit" value="login now" name="login" class="btn">
+            </form>
+
+            <form action="" method="post">
+               <h3>register now</h3>
+               <input type="text" name="name" required class="box" placeholder="enter your name" maxlength="20">
+               <input type="email" name="email" required class="box" placeholder="enter your email" maxlength="50">
+               <input type="password" name="pass" required class="box" placeholder="enter your password" maxlength="20">
+               <input type="password" name="cpass" required class="box" placeholder="confirm your password"
+                  maxlength="20">
+               <input type="submit" value="register now" name="register" class="btn">
+            </form>
+
+         </div>
+
+      </section>
+
+   </div>
+
+   <div class="my-orders">
+
+      <section>
+
+         <div id="close-orders"><span>close</span></div>
+
+         <h3 class="title"> my orders </h3>
+
+         <div class="box">
+            <p>Placed on : <span>29/10/2023</span> </p>
+            <p>Name : <span>Reyz</span> </p>
+            <p>Payment method : <span>DANA</span></p>
+            <p>Gane orders : <span>Raft</span></p>
+            <p>Total price : <span>$10.00/-</span></p>
+            <p>Payment status : <span style="color: var(--green);">Done</span> </p>
+         </div>
+
+         <div class="box">
+            <p>Placed on : <span>25/10/2023</span> </p>
+            <p>Name : <span>Kyzen</span> </p>
+            <p>Payment method : <span>Mandiri</span></p>
+            <p>Game orders : <span>Watch Dogs Legion</span></p>
+            <p>Total price : <span>$19.99/-</span></p>
+            <p>Payment status : <span style="color: var(--green);">Done</span> </p>
+         </div>
+
+         <div class="box">
+            <p>Placed on : <span>29/10/2023</span> </p>
+            <p>Name : <span>Ryu</span> </p>
+            <p>Payment method : <span>Mandiri</span></p>
+            <p>your orders : <span>Sekiro - Shadow Die Twice </span></p>
+            <p>Total price : <span>$29.99/-</span></p>
+            <p>Payment status : <span style="color: var(--green);">Done</span> </p>
+         </div>
+
+         <div class="box">
+            <p>Placed on : <span>31/10/2023</span> </p>
+            <p>Name : <span>Jevaa</span> </p>
+            <p>Payment method : <span>BCA</span></p>
+            <p>your orders : <span>Cyberpunk 2077 </span></p>
+            <p>Total price : <span>39.99/-</span></p>
+            <p>Payment status : <span style="color: var(--green);">Done</span> </p>
+         </div>
+
+      </section>
+
+   </div>
+
+   <div class="shopping-cart">
+
+      <section>
+
+         <div id="close-cart"><span>close</span></div>
+
+         <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="images/Raft.png" alt="">
+            <div class="content">
+               <p>Raft <span>$10.00</span></p>
+               <form action="" method="post">
+                  <button type="submit" class="fas fa-edit" name="update_qty"></button>
+               </form>
+            </div>
+         </div>
+
+         <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="images/Sekiro.png" alt="">
+            <div class="content">
+               <p>Sekiro - Shadow Die Twice <span>$29.99</span></p>
+               <form action="" method="post">
+                  <button type="submit" class="fas fa-edit" name="update_qty"></button>
+               </form>
+            </div>
+         </div>
+
+         <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="images/Watch Dogs Legion.png" alt="">
+            <div class="content">
+               <p>Watch Dogs Legion <span>$19.99</span></p>
+               <form action="" method="post">
+                  <button type="submit" class="fas fa-edit" name="update_qty"></button>
+               </form>
+            </div>
+         </div>
+
+         <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="images/Cyberpunk 2077.png" alt="">
+            <div class="content">
+               <p>Cyberpunk  2077 <span>$39.99</span></p>
+               <form action="" method="post">
+                  <button type="submit" class="fas fa-edit" name="update_qty"></button>
+               </form>
+            </div>
+         </div>
+
+         <a href="#order" class="btn">order now</a>
+
+      </section>
+
+   </div>
+
+   <div class="home-bg">
+
+      <section class="home" id="home">
+
+         <div class="slide-container">
+
+            <div class="slide active">
+               <div class="image">
+                  <img src="images/NFS Heat.png" alt="">
+               </div>
+               <div class="content">
+                  <h3>Need For Speed - Heat</h3>
+                  <div class="fas fa-angle-left" onclick="prev()"></div>
+                  <div class="fas fa-angle-right" onclick="next()"></div>
+               </div>
+            </div>
+
+            <div class="slide">
+               <div class="image">
+                  <img src="images/RDR 2.png" alt="">
+               </div>
+               <div class="content">
+                  <h3>Red Dead Redemption 2</h3>
+                  <div class="fas fa-angle-left" onclick="prev()"></div>
+                  <div class="fas fa-angle-right" onclick="next()"></div>
+               </div>
+            </div>
+
+            <div class="slide">
+               <div class="image">
+                  <img src="images/WD 2.png" alt="">
+               </div>
+               <div class="content">
+                  <h3>Watch Dogs 2</h3>
+                  <div class="fas fa-angle-left" onclick="prev()"></div>
+                  <div class="fas fa-angle-right" onclick="next()"></div>
+               </div>
+
+            </div>
+
+         </div>
+
+      </section>
+
+   </div>
+
+   <!-- about section starts  -->
+
+   <section class="about" id="about">
+
+      <h1 class="heading">about us</h1>
+
+      <div class="box-container">
+
+         <div class="box">
+            <img src="images/Bg.jpg" alt="">
+            <h3>This game is original</h3>
+            <p>The games I sell have no viruses and are 100% trusted and original without you worrying about buying them.</p>
+            <a href="#menu" class="btn">our games</a>
+         </div>
+
+         <div class="box">
+            <img src="images/Bg2.jpeg" alt="">
+            <h3>Cheap price</h3>
+            <p>You can buy games available in this game store at low prices and get discounts. Come on, buy games at affordable prices</p>
+            <a href="#menu" class="btn">our games</a>
+         </div>
+
+         <div class="box">
+            <img src="images/Bg4.jpg" alt="">
+            <h3>Share with friends</h3>
+            <p>Share with your friends the game store website with low prices and discounts that you can get up to a 90% discount</p>
+            <a href="#menu" class="btn">our games</a>
+         </div>
+
+      </div>
+
+   </section>
+
+   <!-- about section ends -->
+
+   <!-- menu section starts  -->
+
+   <section id="menu" class="menu">
+
+      <h1 class="heading">our games</h1>
+
+      <div class="box-container">
+
+         <div class="box">
+            <div class="price">$<span>25.99</span>/-</div>
+            <img src="images/FH 4.png" alt="">
+            <div class="name">Forza Horizon 4</div>
+            <form action="" method="">
+               <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+         </div>
+
+         <div class="box">
+            <div class="price">$<span>39.99</span>/-</div>
+            <img src="images/Cyberpunk 2077.png" alt="">
+            <div class="name">Cyberpunk 2077</div>
+            <form action="" method="">
+               <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+         </div>
+
+         <div class="box">
+            <div class="price">$<span>40.00</span>/-</div>
+            <img src="images/Dying Light 2.png" alt="">
+            <div class="name">Dying Light 2</div>
+            <form action="" method="">
+               <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+         </div>
+
+         <div class="box">
+            <div class="price">$<span>19.99</span>/-</div>
+            <img src="images/Watch Dogs Legion.png" alt="">
+            <div class="name">Watch Dogs - Legion</div>
+            <form action="" method="">
+               <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+         </div>
+
+         <div class="box">
+            <div class="price">$<span>25.99</span>/-</div>
+            <img src="images/World War Z.png" alt="">
+            <div class="name">World War Z</div>
+            <form action="" method="">
+               <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+         </div>
+
+         <div class="box">
+            <div class="price">$<span>10.00</span>/-</div>
+            <img src="images/Raft.png" alt="">
+            <div class="name">Raft</div>
+            <form action="" method="">
+               <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+         </div>
+
+         <div class="box">
+            <div class="price">$<span>42.99</span>/-</div>
+            <img src="images/COD MW 2.png" alt="">
+            <div class="name">Call of Duty - Modern Warfare 2</div>
+            <form action="" method="">
+               <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+         </div>
+
+         <div class="box">
+            <div class="price">$<span>29.99</span>/-</div>
+            <img src="images/Sekiro.png" alt="">
+            <div class="name">Sekiro - Shadow Die Twice</div>
+            <form action="" method="">
+               <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+         </div>
+
+         <div class="box">
+            <div class="price">$<span>29.99</span>/-</div>
+            <img src="images/Man of Medan.png" alt="">
+            <div class="name">Man of Medan</div>
+            <form action="" method="">
+               <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+         </div>
+
+         <div class="box">
+            <div class="price">$<span>35.99</span>/-</div>
+            <img src="images/The Crew 2.png" alt="">
+            <div class="name">The Crew 2</div>
+            <form action="" method="">
+               <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+         </div>
+
+         <div class="box">
+            <div class="price">$<span>45.99</span>/-</div>
+            <img src="images/Mortal Kombat 11.png" alt="">
+            <div class="name">Mortal Kombat 11</div>
+            <form action="" method="">
+               <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+         </div>
+
+         <div class="box">
+            <div class="price">$<span>35.00</span>/-</div>
+            <img src="images/Jump Force.png" alt="">
+            <div class="name">Jump Force</div>
+            <form action="" method="">
+               <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+         </div>
+
+      </div>
+
+   </section>
+
+      <div class="credit">
+         &copy; Copyright @ 2023 by <span>Adam Ramdani</span> | all rights reserved!
+      </div>
+
+   </section>
+   <script src="script.js"></script>
+
+</body>
+
+</html>
